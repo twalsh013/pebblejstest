@@ -1,15 +1,11 @@
 var count = parseInt(localStorage.getItem('count')) || 0;
 
 simply.on('singleClick', function(e) {
-  if (e.button === 'up') {
+  if (e.button === 'select') {
     ++count;
-  } else if (e.button === 'down') {
-    --count;
   }
   if (count > 3){
     count = 0;
-  } else if (count < 0){
-    count = 3;
   } 
   if (count === 3 ){
     simply.subtitle('brightness');
