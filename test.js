@@ -1,5 +1,5 @@
 var count = parseInt(localStorage.getItem('count')) || 0;
-
+var word = localStorage.getItem('word') || 'red';
 simply.on('singleClick', function(e) {
   if (e.button === 'select') {
     ++count;
@@ -8,15 +8,17 @@ simply.on('singleClick', function(e) {
     count = 0;
   } 
   if (count === 3 ){
-    simply.subtitle('brightness');
+    word = 'brightness';
   } else if (count === 2 ){
-    simply.subtitle('blue');
+    word = 'blue';
   } else if (count === 1 ){
-    simply.subtitle('green');
+    word = 'green';
   } else if (count === 0 ){
-    simply.subtitle('red');
+    word = 'red';
   }
+  simply.subtitle(word);
   localStorage.setItem('count', count);
+  localStorage.setItem('word', word);
 });
 
-simply.text({ title: 'RGB Control', subtitle: count });
+simply.text({ title: 'RGB Control', subtitle: word });
