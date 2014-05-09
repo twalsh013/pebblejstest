@@ -23,4 +23,4 @@ simply.on('singleClick', function(e) {
   localStorage.setItem('count', count);
 });
 
-simply.text({ title: 'Bitches aint shit', subtitle: count });
+simply.text({ title: 'RGB Control', subtitle: count });
