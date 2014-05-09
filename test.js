@@ -2,9 +2,9 @@ var count = parseInt(localStorage.getItem('count')) || 0;
 
 simply.on('singleClick', function(e) {
   if (e.button === 'up') {
-    simply.subtitle(++count);
+    simply.subtitle('wryyyy');
   } else if (e.button === 'down') {
-    simply.subtitle(--count);
+    simply.subtitle('fuck');
   }
   localStorage.setItem('count', count);
 });
