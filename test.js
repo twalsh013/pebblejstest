@@ -68,16 +68,16 @@ simply.on('singleClick', function(e) {
   } 
   if (count === 3 ){
     word = 'brightness';
-    simply.body(brightcount);
+    //simply.body(brightcount);
   } else if (count === 2 ){
     word = 'blue';
-    simply.body(bluecount);
+    //simply.body(bluecount);
   } else if (count === 1 ){
     word = 'green';
-    simply.body(greencount);
+    //simply.body(greencount);
   } else if (count === 0 ){
     word = 'red';
-    simply.body(redcount);
+    //simply.body(redcount);
   }
   simply.subtitle(word);
   localStorage.setItem('count', count);
