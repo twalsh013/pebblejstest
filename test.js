@@ -39,10 +39,7 @@ simply.on('singleClick', function(e) {
   simply.subtitle(word);
   localStorage.setItem('count', count);
   localStorage.setItem('word', word);
-  localStorage.setItem('rcount', redcount);
-  localStorage.setItem('gcount', greencount);
-  localStorage.setItem('bcount', bluecount);
-  localStorage.setItem('brightcount', brightcount);
+  localStorage.setItem('level', levelcount);
 });
 
 simply.text({ title: 'RGB Control', subtitle: word });
